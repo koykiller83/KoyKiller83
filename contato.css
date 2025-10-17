@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html, body 
+{
+    height: 100%;
+    background-color: #000;
+}
+main 
+{
+    flex: 1;
+}
+
+/* Inicio do cabeçalho */
+header 
+{
+    background-color: #000;
+    width: 100%;
+    padding: 2px 0;
+}
+
+.container 
+{
+    max-width: 1200px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo 
+{
+    flex-shrink: 0;
+}
+
+.logo img 
+{
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Inicio do menu */
+.menu 
+{
+    flex-grow: 1;
+}
+
+.menu nav 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px; /* distância entre os links */
+}
+
+.menu nav a 
+{
+    color: azure;
+    text-decoration: none;
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding: 2px 0;
+    transition: color 0.3s;
+}
+
+.menu nav a:hover 
+{
+    color: #d4a043;
+}
+.conteudo
+{
+    background-image: url(./img/fundomenu.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* ===== CONTAINER GERAL ===== */
+body 
+{
+    margin: 0;
+    background-color: #000;
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column; /* 🔹 organiza header, main e footer verticalmente */
+    min-height: 100vh;               /* 🔹 centraliza verticalmente */
+}
+
+.container-box
+{
+    display: flex;
+    justify-content: center;     /* centraliza horizontalmente */
+    align-items: flex-start;     /* alinha no topo */
+    gap: 40px;                   /* espaço entre as caixas */
+    flex-wrap: wrap;             /* empilha em telas pequenas */
+    padding: 60px 5px;
+    background-image: url(./img/fundomenu.png);
+    background-size: cover;
+    background-position: center;    /* 🔹 espaço entre as duas box */
+    align-items: stretch;          /* 🔹 força as duas caixas a terem a mesma altura */
+    
+}
+
+/* Primeira e segunda div */
+.box1
+{
+    width: 550px;                  /* 🔹 mesma largura */
+    min-height: 600px;             /* 🔹 mesma altura mínima */
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 50px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 🔹 distribui conteúdo verticalmente */
+    border-style: inset;
+    border-color: #d4a043;
+}
+
+.box1 h1::after 
+{
+    content: '';
+    /*display: block;*/
+    bottom: -10px;           /* distância vertical da linha */
+    left: 3%;
+    width: 26.5rem;
+    height: 0.3rem;
+    background-color: #d4a043;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+
+}
+
+.box2 h2::after 
+{
+    content: '';
+    /*display: block;*/
+    bottom: -10px;           /* distância vertical da linha */
+    left: -4%;
+    width: 18rem;
+    height: 0.3rem;
+    background-color: #d4a043;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+    
+}
+
+.f1
+{
+    border: 2px solid #d4a043;
+    border-radius: 5px;
+    padding: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.f2
+{
+    border: 2px solid #d4a043;
+    border-radius: 5px;
+    padding: 2rem;
+    width: 100%;           /* 🔹 ocupa toda a largura da box2 */
+    box-sizing: border-box; /* 🔹 garante que o padding não quebre o layout */
+}
+
+legend
+{
+    color: #000;
+    padding: 1rem 0.5rem;
+}
+
+textarea
+{
+    background-color: transparent;
+    outline: none;
+    border-radius: 5px;
+}
+
+button
+{
+    background-color: #d4a043;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+}
+
+.box2 
+{
+    width: 550px;
+    min-height: 600px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    padding: 50px; /* 🔹 menos espaço em cima */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start; /* 🔹 garante que o conteúdo fique no topo */
+    border-style: inset;
+    border-color: #d4a043;
+}  
+
+.box1 h1 
+{
+    position: relative;
+    text-align: center;
+    margin-bottom: 100px;
+    color: #000;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.box2 h2 
+{
+    position: relative;
+    text-align: center;
+    margin-bottom: 100px;
+    color: #000;
+    font-size: 1.6rem;
+    margin-bottom: 45px;
+    font-weight: bold;
+}
+
+.box1 input, .box1 textarea 
+{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #d4a043;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #fff;
+}
+
+.box1 textarea 
+{
+    resize: none;
+}
+
+.contato-info 
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contato-info li 
+{
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;;
+}
+
+.contato-info i 
+{
+    color: #d4a043; /* cor dourada igual aos botões */
+    font-size: 1.2rem;
+    width: 25px;
+    text-align: center;
+}
+/* Apartir daqui, botões de redes sociais
+e redirecionamento para as mesmas */
+.midias 
+{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.midias .social 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, #f1c04b, #d4a043);
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    transition: transform 0.3s, background 0.3s;
+}
+
+/* Animações nos botões */
+.midias .social:hover 
+{
+    transform: scale(1.2);
+    background-image: linear-gradient(45deg, #ff7100, #d4a043);
+}
+
+.footer-container 
+{
+    display: flex;
+    flex-direction: row;         /* lado a lado */
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+footer 
+{
+    background-color: #000;
+    color: azure;
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    letter-spacing: 1.5px;
+    position: relative;
+    left: 0;
+}
+
+.footer-logo img 
+{
+    width: 120px;                /* tamanho do logo */
+    height: auto;
+    margin-bottom: 10px;
+    filter: brightness(1.2);
+    transition: transform 0.3s ease;
+}
+
+.footertexto
+{
+    font-size: x-small;
+    padding: 10px 0;
+}
