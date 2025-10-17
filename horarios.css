@@ -240,3 +240,115 @@ footer
     font-size: x-small;
     padding: 10px 0;
 }
+
+
+
+
+
+
+
+
+/* =============================== */
+/*        RESPONSIVIDADE           */
+/* =============================== */
+
+/* Telas até 1024px (tablets e notebooks pequenos) */
+@media (max-width: 1024px) {
+  .menu nav a {
+    font-size: 20px;
+    gap: 20px;
+  }
+
+  .meio h1 {
+    font-size: 1.8rem;
+    padding: 30px;
+  }
+
+  .meio p {
+    font-size: 1rem;
+  }
+
+  .tabela {
+    font-size: 0.95rem;
+  }
+}
+
+/* Telas até 768px (tablets em pé e celulares grandes) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .menu nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu nav a {
+    font-size: 18px;
+  }
+
+  .midias {
+    justify-content: center;
+  }
+
+  .meio h1 {
+    font-size: 1.6rem;
+  }
+
+  .meio p {
+    font-size: 0.9rem;
+    padding: 0 20px;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  .tabela {
+    font-size: 0.85rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* Telas até 480px (celulares pequenos) */
+@media (max-width: 480px) {
+  .logo img {
+    width: 120px;
+  }
+
+  .menu nav a {
+    font-size: 16px;
+  }
+
+  .meio h1 {
+    font-size: 1.4rem;
+  }
+
+  .meio p {
+    font-size: 0.8rem;
+  }
+
+  .midias .social {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+  }
+
+  .tabela {
+    font-size: 0.75rem;
+  }
+
+  footer {
+    font-size: 0.75rem;
+    padding: 20px 0;
+  }
+}

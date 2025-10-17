@@ -249,3 +249,112 @@ footer
     font-size: x-small;
     padding: 10px 0;
 }
+
+
+
+
+
+
+
+
+/* =============================== */
+/*        RESPONSIVIDADE           */
+/* =============================== */
+
+/* Telas até 1024px (tablets e notebooks pequenos) */
+@media (max-width: 1024px) {
+  .menu nav a {
+    font-size: 20px;
+    gap: 25px;
+  }
+
+  .foto {
+    flex: 0 1 45%;
+  }
+
+  .frase1 h2, .frase2 h2, .frase3 h2 {
+    font-size: 1.8rem;
+  }
+
+  .inscrever {
+    font-size: 20px;
+    padding: 12px 30px;
+  }
+}
+
+/* Telas até 768px (tablets em pé e celulares grandes) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .menu nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu nav a {
+    font-size: 18px;
+  }
+
+  .midias {
+    justify-content: center;
+  }
+
+  .imagens {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .foto {
+    width: 100%;
+    flex: none;
+  }
+
+  .frase1 h2, .frase2 h2, .frase3 h2 {
+    font-size: 1.6rem;
+  }
+
+  .botao {
+    padding: 30px 0;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* Telas até 480px (celulares pequenos) */
+@media (max-width: 480px) {
+  .logo img {
+    width: 120px;
+  }
+
+  .menu nav a {
+    font-size: 16px;
+  }
+
+  .frase1 h2, .frase2 h2, .frase3 h2 {
+    font-size: 1.4rem;
+  }
+
+  .inscrever {
+    font-size: 18px;
+    padding: 10px 25px;
+  }
+
+  .midias .social {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 0.75rem;
+    padding: 20px 0;
+  }
+}

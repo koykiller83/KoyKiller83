@@ -348,3 +348,115 @@ footer
     font-size: x-small;
     padding: 10px 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================
+   RESPONSIVIDADE
+======================== */
+
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+    .container-box {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 10px;
+    }
+
+    .box1, .box2 {
+        width: 90%;
+        min-height: auto;
+        padding: 30px;
+    }
+
+    .menu nav {
+        gap: 25px;
+    }
+
+    .menu nav a {
+        font-size: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+/* Celulares (até 768px) */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .menu nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu nav a {
+        font-size: 18px;
+    }
+
+    .midias {
+        justify-content: center;
+    }
+
+    .box1 h1, .box2 h2 {
+        font-size: 1.3rem;
+    }
+
+    .box1, .box2 {
+        width: 95%;
+        padding: 25px;
+    }
+
+    fieldset {
+        padding: 1.2rem;
+    }
+
+    .footer-logo img {
+        width: 100px;
+    }
+
+    .footer-info p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+    .menu nav a {
+        font-size: 16px;
+    }
+
+    .box1, .box2 {
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .contato-info li {
+        font-size: 0.9rem;
+        white-space: normal; /* quebra linha se for muito longo */
+    }
+
+    .footer-info p {
+        font-size: 0.8rem;
+    }
+}
