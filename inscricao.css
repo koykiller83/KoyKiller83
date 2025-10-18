@@ -10,7 +10,13 @@
     font-style: normal;
 }
 
-html, body 
+html 
+{
+    height: 100%;
+    background-color: #000;
+}
+
+body
 {
     height: 100%;
     background-color: #000;
@@ -22,11 +28,13 @@ main
 }
 
 /* Inicio do cabeçalho */
+
 header 
 {
     background-color: #000;
     width: 100%;
     padding: 2px 0;
+    flex-shrink: 0;
 }
 
 .container-header
@@ -84,8 +92,8 @@ header
 }
 .conteudo
 {
-  background-size: cover;
-  background-position: center;
+    background-size: cover;
+    background-position: center;
 }
 
 /* Apartir daqui, botões de redes sociais
@@ -121,33 +129,37 @@ e redirecionamento para as mesmas */
 
 body 
 {
-    width: 100%;
-    min-height: 100vh;
     display: flex;
-    background-image: url(./img/fundomenu.png);
     flex-direction: column;
+    min-height: 100vh;
+    background-image: url(./img/fundomenu.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .container 
 {
-    width: 60%;
-    min-height: 80vh;
+    width: 100%;
+    flex: 1;
     display: flex;
-    margin: 2rem auto;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 20px;
+    min-height: auto;
+    margin: 0 auto;
 }
 
 .form 
 {
     width: 50%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 600px;
     background-color: #fff;
     padding: 3rem;
     border-radius: 10px;
-    border-style: inset;
-    border-color: #d4a043;
+    border: 2px solid #d4a043;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
 }
 
 .form-header 
@@ -195,14 +207,12 @@ body
 .form-header h1::after 
 {
     content: '';
-    display: flex;
+    display: block;
     width: 11.5rem;
     height: 0.3rem;
     background-color: #d4a043;
-    margin: 0 auto;
-    position: absolute;
-    border-radius: 10px;
-    font-weight: bold;
+    margin: 10px auto 0;
+    border-radius: 10px
 }
 
 .input-group 
@@ -227,7 +237,7 @@ body
     border: none;
     border-radius: 10px;
     box-shadow: 1px 1px 6px #0000001c;
-    font-size: 0.8rem;
+    font-size: 0.95rem;
 }
 
 .input-box input:hover 
@@ -242,7 +252,7 @@ body
 
 .input-box label, .gender-title h6 
 {
-    font-size: 0.75rem;
+    font-size: 0.95rem;
     font-weight: 600;
     color: #000000c0;
 }
@@ -273,8 +283,8 @@ body
 
 .gender-input label 
 {
-    font-size: 0.81rem;
-    font-weight: 600;
+    font-size: 0.95rem;
+    font-weight: 300;
     color: #000000c0;
 }
 
