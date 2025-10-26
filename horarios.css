@@ -1,354 +1,236 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+/* Fonte usada no site */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-html
+/* Configurações da página */
+* 
 {
-    height: 100%;
-    background-color: #000;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
+/* Fundo, cor e altura total */
+html, body 
+{
+  height: 100%;
+  background-color: #000;
+}
+
+/* Rodapé fixo no fim da página */
 body 
 {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    height: 100%;
-    background-color: #000;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 main 
 {
-    flex: 1;
+  flex: 1;
 }
 
-/* Inicio do cabeçalho */
+/* Cabeçalho */
 header 
 {
-    background-color: #000;
-    width: 100%;
-    padding: 2px 0;
+  background-color: #000;
+  width: 100%;
+  padding: 2px 0;
 }
 
+/* Container do cabeçalho */
 .container 
 {
-    max-width: 1200px;
-    margin: 10px auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 15px;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.logo 
-{
-    flex-shrink: 0;
+  max-width: 1200px;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .logo img 
 {
-    width: 150px;
-    height: auto;
-    cursor: pointer;
+  width: 150px;
+  height: auto;
+  cursor: pointer;
 }
 
-/* Inicio do menu */
-.menu 
-{
-    flex-grow: 1;
-}
-
+/* Menu */
 .menu nav 
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 40px; /* distância entre os links */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
+/* Links */
 .menu nav a 
 {
-    color: azure;
-    text-decoration: none;
-    font-size: 24px;
-    letter-spacing: 1px;
-    padding: 2px 0;
-    transition: color 0.3s;
+  color: azure;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 1px;
+  transition: color 0.3s;
 }
 
+/* Mudar cor dos links */
 .menu nav a:hover 
 {
-    color: #d4a043;
+  color: #d4a043;
 }
-.conteudo
+
+/* Botões das redes sociais */
+.midias 
+{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Estilo dos ícones */
+.midias .social 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-image: linear-gradient(45deg, #f1c04b, #d4a043);
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  transition: transform 0.3s, background 0.3s;
+}
+
+/* Mudar cor dos botões das redes sociais */
+.midias .social:hover 
+{
+  transform: scale(1.2);
+  background-image: linear-gradient(45deg, #ff7100, #efa51b);
+}
+
+/* Rodapé */
+footer 
+{
+  background-color: #000;
+  color: azure;
+  width: 100%;
+  padding: 30px 0;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+/* Container do rodapé */
+.footer-container 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.footer-logo img 
+{
+  width: 120px;
+  height: auto;
+}
+
+.footertexto 
+{
+  font-size: x-small;
+  padding: 10px 0;
+}
+
+/* Referente ao centro da página (main) */
+.conteudo 
 {
   background-image: url(./img/fundomenu.png);
   background-size: cover;
   background-position: center;
 }
-.meio h1
+
+/* Título e parágrafo */
+.meio 
 {
-    color: azure;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 800;
-    font-style: italic;
-    letter-spacing: 2px;
-    padding: 40px;
+  text-align: center;
+  padding: 40px 20px;
 }
 
-.meio p
+.meio h1 
 {
-   color: azure;
-    text-align: center;
-    font-size: 20px;
-    letter-spacing: 1px;
+  color: azure;
+  font-size: 2rem;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
 }
 
-.meio p b
+.meio p 
 {
-   color: #f1c04b;
-    text-align: center;
-    font-size: 20px;
-    letter-spacing: 1px;
+  color: azure;
+  font-size: 20px;
+  letter-spacing: 1px;
 }
 
-/* Estilo simples para a tabela */
-    .tabela 
-    {
-      width: 100%;
-      max-width: 1100px;
-      margin: 24px auto;
-      border-collapse:separate;
-      font-family: 'Inter', sans-serif;
-      text-align: center;
-    }
-
-    .tabela thead th 
-    {
-      background: #f1c04b;
-      color: #000;
-      padding: 10px 12px;
-      border: 1px solid;
-      border-radius: 5px;
-      text-align: center;
-      font-weight: 700;
-    }
-
-    .tabela tbody td 
-    {
-      padding: 10px 12px;
-      border: 1px solid;
-      border-radius: 5px;
-      background: azure;
-      color: #111;
-    }
-tfoot td 
-    {
-      background-color: azure;
-      color: #000;
-      font-weight: bold;
-      padding: 10px;
-      border-top: 1px solid #000;
-      border-radius: 5px;
-      font-size: small;
-    }
-    
-
-    /* responsivo simples: torna a tabela rolável em telas pequenas*/
-    .table-wrap 
-    {
-      overflow-x: auto;
-      padding: 0 12px;
-    }
-
-/* Apartir daqui, botões de redes sociais
-e redirecionamento para as mesmas */
-.midias 
+.meio p b 
 {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  color: #f1c04b;
 }
 
-.midias .social 
+/* Tabela de horários */
+.div-tabela 
 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    background-image: linear-gradient(45deg, #f1c04b, #d4a043);
-    color: #fff;
-    font-size: 16px;
-    text-decoration: none;
-    transition: transform 0.3s, background 0.3s;
+  padding: 0 12px;
 }
 
-/* Animações nos botões */
-.midias .social:hover 
+/* Configuração da tabela */
+.tabela
 {
-    transform: scale(1.2);
-    background-image: linear-gradient(45deg, #ff7100, #ffaa00);
+  width: 100%;
+  max-width: 1100px;
+  margin: 24px auto;
+  border-collapse: separate;
+  text-align: center;
+  font-size: 1rem;
 }
 
-
-.footer-container 
+/* Cabeçalho tabela */
+.tabela thead th 
 {
-    display: flex;
-    flex-direction: row;         /* lado a lado */
-    align-items: center;
-    justify-content: center;
-    gap: 80px;
-    flex-wrap: wrap;
+  background: #f1c04b;
+  color: #000;
+  padding: 10px 12px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-weight: 700;
 }
 
-footer 
+/* Corpo tabela */
+.tabela tbody td 
 {
-    background-color: #000;
-    color: azure;
-    width: 100%;
-    padding: 30px 0;
-    text-align: center;
-    letter-spacing: 1.5px;
-    position: relative;
-    left: 0;
+  background: azure;
+  color: #111;
+  padding: 10px 12px;
+  border: 1px solid #000;
+  border-radius: 5px;
 }
 
-.footer-logo img 
+/* Rodapé tabela */
+.tabela tfoot td 
 {
-    width: 120px;                /* tamanho do logo */
-    height: auto;
-    margin-bottom: 10px;
-    filter: brightness(1.2);
-    transition: transform 0.3s ease;
-}
-
-.footertexto
-{
-    font-size: x-small;
-    padding: 10px 0;
-}
-
-
-
-
-
-
-
-
-/* =============================== */
-/*        RESPONSIVIDADE           */
-/* =============================== */
-
-/* Telas até 1024px (tablets e notebooks pequenos) */
-@media (max-width: 1024px) {
-  .menu nav a {
-    font-size: 20px;
-    gap: 20px;
-  }
-
-  .meio h1 {
-    font-size: 1.8rem;
-    padding: 30px;
-  }
-
-  .meio p {
-    font-size: 1rem;
-  }
-
-  .tabela {
-    font-size: 0.95rem;
-  }
-}
-
-/* Telas até 768px (tablets em pé e celulares grandes) */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 15px;
-  }
-
-  .menu nav {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .menu nav a {
-    font-size: 18px;
-  }
-
-  .midias {
-    justify-content: center;
-  }
-
-  .meio h1 {
-    font-size: 1.6rem;
-  }
-
-  .meio p {
-    font-size: 0.9rem;
-    padding: 0 20px;
-  }
-
-  .table-wrap {
-    overflow-x: auto;
-    width: 100%;
-  }
-
-  .tabela {
-    font-size: 0.85rem;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    gap: 20px;
-  }
-}
-
-/* Telas até 480px (celulares pequenos) */
-@media (max-width: 480px) {
-  .logo img {
-    width: 120px;
-  }
-
-  .menu nav a {
-    font-size: 16px;
-  }
-
-  .meio h1 {
-    font-size: 1.4rem;
-  }
-
-  .meio p {
-    font-size: 0.8rem;
-  }
-
-  .midias .social {
-    width: 28px;
-    height: 28px;
-    font-size: 14px;
-  }
-
-  .tabela {
-    font-size: 0.75rem;
-  }
-
-  footer {
-    font-size: 0.75rem;
-    padding: 20px 0;
-  }
+  background-color: azure;
+  color: #000;
+  font-weight: bold;
+  padding: 10px;
+  border-top: 1px solid #000;
+  border-radius: 5px;
+  font-size: small;
 }

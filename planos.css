@@ -1,337 +1,189 @@
+/* Fonte usada no site */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
 
+/* Configurações da página */
 * 
 {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
-html 
+/* Fundo, cor e altura total */
+html, body 
 {
-    height: 100%;
-    background-color: #000;
+  height: 100%;
+  background-color: #000;
 }
 
+/* Rodapé fixo no fim da página */
 body 
 {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    height: 100%;
-    background-color: #000;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 main 
 {
-    flex: 1;
+  flex: 1;
 }
 
-/* Inicio do cabeçalho */
+/* Cabeçalho */
 header 
 {
-    background-color: #000;
-    width: 100%;
-    padding: 2px 0;
+  background-color: #000;
+  width: 100%;
+  padding: 2px 0;
 }
 
+/* Container do cabeçalho */
 .container 
 {
-    max-width: 1200px;
-    margin: 10px auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 15px;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.logo 
-{
-    flex-shrink: 0;
+  max-width: 1200px;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .logo img 
 {
-    width: 150px;
-    height: auto;
-    cursor: pointer;
+  width: 150px;
+  height: auto;
+  cursor: pointer;
 }
 
-/* Inicio do menu */
-.menu 
-{
-    flex-grow: 1;
-}
-
+/* Menu */
 .menu nav 
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 40px; /* distância entre os links */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
+/* Links */
 .menu nav a 
 {
-    color: azure;
-    text-decoration: none;
-    font-size: 24px;
-    letter-spacing: 1px;
-    padding: 2px 0;
-    transition: color 0.3s;
+  color: azure;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 1px;
+  transition: color 0.3s;
 }
 
+/* Mudar cor dos links */
 .menu nav a:hover 
 {
-    color: #d4a043;
-}
-.conteudo
-{
-    background-image: url(./img/fundomenu.png);
-    background-size: cover;
-    background-position: center;
-}
-.meio h1
-{
-    color: azure;
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 800;
-    font-style: italic;
-    letter-spacing: 2px;
+  color: #d4a043;
 }
 
-/* Apartir daqui, botões de redes sociais
-e redirecionamento para as mesmas */
+/* Botões das redes sociais */
 .midias 
 {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
+/* Estilo dos ícones */
 .midias .social 
 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    background-image: linear-gradient(45deg, #f1c04b, #d4a043);
-    color: #fff;
-    font-size: 16px;
-    text-decoration: none;
-    transition: transform 0.3s, background 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-image: linear-gradient(45deg, #f1c04b, #d4a043);
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  transition: transform 0.3s, background 0.3s;
 }
 
-/* Animações nos botões */
+/* Mudar cor dos botões das redes sociais */
 .midias .social:hover 
 {
-    transform: scale(1.2);
-    background-image: linear-gradient(45deg, #ff7100, #ffaa00);
+  transform: scale(1.2);
+  background-image: linear-gradient(45deg, #ff7100, #efa51b);
 }
 
-
-.footer-container 
-{
-    display: flex;
-    flex-direction: row;         /* lado a lado */
-    align-items: center;
-    justify-content: center;
-    gap: 80px;
-    flex-wrap: wrap;
-}
-
+/* Rodapé */
 footer 
 {
-    background-color: #000;
-    color: azure;
-    width: 100%;
-    padding: 30px 0;
-    text-align: center;
-    letter-spacing: 1.5px;
-    position: relative;
-    left: 0;
+  background-color: #000;
+  color: azure;
+  width: 100%;
+  padding: 30px 0;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+/* Container do rodapé */
+.footer-container 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
 }
 
 .footer-logo img 
 {
-    width: 120px;                /* tamanho do logo */
-    height: auto;
-    margin-bottom: 10px;
-    filter: brightness(1.2);
-    transition: transform 0.3s ease;
+  width: 120px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
-.footertexto
+.footertexto 
 {
-    font-size: x-small;
-    padding: 10px 0;
+  font-size: x-small;
+  padding: 10px 0;
 }
 
-.container-planos
+/* Referente ao centro da página (main) */
+.conteudo 
 {
-    max-width: 60%;
-    border-radius: 8px;
-    border-style: inset;
-    border-color: #d4a043;
-    margin: 40px auto;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
+  background-image: url(./img/fundomenu.png);
+  background-size: cover;
+  background-position: center;
 }
-.container-planos img
+
+/* Container planos */
+.container-planos 
 {
-    width: 100%;               /* ocupa toda a largura da box */
-    height: auto;              /* mantém proporção original */
-    object-fit: cover;         /* preenche bem o espaço */
-    border-radius: 8px;        /* acompanha o arredondamento da box */
-    display: block;
-    transition: transform 0.5s;
-    cursor: pointer;
+  max-width: 60%;
+  border-radius: 8px;
+  border: 2px inset #d4a043;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
+
+/* Imagem planos */
+.container-planos img 
+{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+/* Pequeno zoom na imagem */
 .container-planos:hover img 
 {
-    transform: scale(1.05);
-}
-
-
-
-
-
-
-/* ===== MEDIA QUERIES PARA TELAS MENORES ===== */
-
-/* Tablets (até 768px) */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        gap: 15px;
-        padding: 0 20px;
-    }
-    
-    .menu nav {
-        gap: 25px;
-    }
-    
-    .menu nav a {
-        font-size: 20px;
-    }
-    
-    .container-planos {
-        max-width: 80%;
-        margin: 30px auto;
-    }
-    
-    .footer-container {
-        gap: 40px;
-        flex-direction: column;
-    }
-}
-
-/* Celulares (até 480px) */
-@media (max-width: 480px) {
-    .container {
-        margin: 5px auto;
-        gap: 10px;
-    }
-    
-    .logo img {
-        width: 120px;
-    }
-    
-    .menu nav {
-        gap: 15px;
-        flex-direction: column;
-    }
-    
-    .menu nav a {
-        font-size: 18px;
-        padding: 5px 0;
-    }
-    
-    .midias {
-        gap: 10px;
-    }
-    
-    .midias .social {
-        width: 30px;
-        height: 30px;
-        font-size: 14px;
-    }
-    
-    .container-planos {
-        max-width: 90%;
-        margin: 20px auto;
-    }
-    
-    .container-planos:hover img {
-        transform: scale(1.02); /* Efeito mais sutil em mobile */
-    }
-    
-    .footer-container {
-        gap: 20px;
-    }
-    
-    .footer-logo img {
-        width: 100px;
-    }
-    
-    .footer-info p {
-        font-size: 14px;
-    }
-    
-    .footertexto {
-        font-size: 10px;
-    }
-}
-
-/* Telas muito pequenas (até 320px) */
-@media (max-width: 320px) {
-    .menu nav {
-        gap: 10px;
-    }
-    
-    .menu nav a {
-        font-size: 16px;
-    }
-    
-    .container-planos {
-        max-width: 95%;
-        margin: 15px auto;
-    }
-    
-    .container-planos img {
-        border-radius: 6px;
-    }
-}
-
-/* Ajustes para orientação landscape em celulares */
-@media (max-height: 500px) and (orientation: landscape) {
-    .container-planos {
-        margin: 20px auto;
-        max-width: 70%;
-    }
-}
-
-/* Ajustes para telas grandes (acima de 1200px) */
-@media (min-width: 1200px) {
-    .container-planos {
-        max-width: 800px; /* Limita o tamanho máximo em telas muito grandes */
-    }
-}
-
-/* Ajustes para quando a imagem é muito grande em relação à tela */
-@media (max-width: 1024px) {
-    .container-planos {
-        max-width: 70%;
-    }
+  transform: scale(1.05);
 }

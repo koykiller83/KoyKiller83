@@ -1,89 +1,155 @@
+/* Fonte usada no site */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
 
+/* Configurações da página */
 * 
 {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
+/* Fundo, cor e altura total */
 html, body 
 {
-    height: 100%;
-    background-color: #000; /* mantém o fundo padrão escuro */
+  height: 100%;
+  background-color: #000;
 }
 
-body
+/* Rodapé fixo no fim da página */
+body 
 {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-/* Inicio do cabeçalho */
+main 
+{
+  flex: 1;
+}
+
+/* Cabeçalho */
 header 
 {
-    background-color: #000;
-    width: 100%;
-    padding: 2px 0;
+  background-color: #000;
+  width: 100%;
+  padding: 2px 0;
 }
 
-.container 
+/* Container do cabeçalho */
+.container-header
 {
-    max-width: 1200px;
-    margin: 10px auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 15px;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.logo 
-{
-    flex-shrink: 0;
+  max-width: 1200px;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .logo img 
 {
-    width: 150px;
-    height: auto;
-    cursor: pointer;
+  width: 150px;
+  height: auto;
+  cursor: pointer;
 }
 
-/* Inicio do menu */
+/* Menu */
 .menu 
 {
-    flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
-.menu nav 
+/* Links */
+.menu a 
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 40px; /* distância entre os links */
+  color: azure;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 1px;
+  transition: color 0.3s;
 }
 
-.menu nav a 
+/* Mudar cor dos links */
+.menu a:hover 
 {
-    color: azure;
-    text-decoration: none;
-    font-size: 24px;
-    letter-spacing: 1px;
-    padding: 2px 0;
-    transition: color 0.3s;
+  color: #d4a043;
 }
 
-.menu nav a:hover 
+/* Botões das redes sociais */
+.midias 
 {
-    color: #ff7100;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
+
+/* Estilo dos ícones */
+.midias .social 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-image: linear-gradient(45deg, #f1c04b, #d4a043);
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  transition: transform 0.3s, background 0.3s;
+}
+
+/* Mudar cor dos botões das redes sociais */
+.midias .social:hover 
+{
+  transform: scale(1.2);
+  background-image: linear-gradient(45deg, #ff7100, #efa51b);
+}
+
+/* Rodapé */
+footer 
+{
+  background-color: #000;
+  color: azure;
+  width: 100%;
+  padding: 30px 0;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+/* Container do rodapé */
+.footer-container 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.footer-logo img 
+{
+  width: 120px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.footertexto 
+{
+  font-size: x-small;
+  padding: 10px 0;
+}
+
+/* Conteudo principal */
 .conteudo
 {
   background-image: url(./img/fundomenu.png);
@@ -91,7 +157,9 @@ header
   background-position: center;
   flex: 1;
 }
-.meio h1
+
+/* Titulo da seção */
+.conteudo section h1
 {
     color: azure;
     text-align: center;
@@ -102,196 +170,24 @@ header
     padding-top: 40px;
 }
 
-.paragrafo
+/* Configuração paragrafo */
+.conteudo section p
 {
     color: azure;
-    text-align: center;
-    justify-content: center;
+    text-align: justify;
     font-size: 1rem;
-    font-weight: 800;
+    font-weight: 400;
     letter-spacing: 1px;
-    padding-top: 40px;
+    margin: 40px auto;      
+    max-width: 960px; 
+    line-height: 1.6;
+    padding: 0 20px;       
 
 }
 
+/* Alinhamento vídeo */
 .video
 {
     text-align: center;
-    
-}
-
-/* Apartir daqui, botões de redes sociais
-e redirecionamento para as mesmas */
-.midias 
-{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.midias .social 
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    background-image: linear-gradient(45deg, #f1c04b, #d4a043);
-    color: #fff;
-    font-size: 16px;
-    text-decoration: none;
-    transition: transform 0.3s, background 0.3s;
-}
-
-/* Animações nos botões */
-.midias .social:hover 
-{
-    transform: scale(1.2);
-    background-image: linear-gradient(45deg, #ff7100, #ffaa00);
-}
-
-
-.footer-container 
-{
-    display: flex;
-    flex-direction: row;         /* lado a lado */
-    align-items: center;
-    justify-content: center;
-    gap: 80px;
-    flex-wrap: wrap;
-}
-
-footer 
-{
-    background-color: #000;
-    color: azure;
-    width: 100%;
-    padding: 30px 0;
-    text-align: center;
-    letter-spacing: 1.5px;
-    position: relative;
-    left: 0;
-}
-
-.footer-logo img 
-{
-    width: 120px;                /* tamanho do logo */
-    height: auto;
-    margin-bottom: 10px;
-    filter: brightness(1.2);
-    transition: transform 0.3s ease;
-}
-
-.footertexto
-{
-    font-size: x-small;
-    padding: 10px 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* =============================== */
-/*        RESPONSIVIDADE           */
-/* =============================== */
-
-/* Telas até 1024px (tablets e notebooks pequenos) */
-@media (max-width: 1024px) {
-  .menu nav a {
-    font-size: 20px;
-    gap: 20px;
-  }
-
-  .video video {
-    width: 90%;
-    height: auto;
-  }
-
-  .meio h1 {
-    font-size: 1.8rem;
-    padding-top: 30px;
-  }
-}
-
-/* Telas até 768px (tablets em pé e celulares grandes) */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 15px;
-  }
-
-  .menu nav {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .menu nav a {
-    font-size: 18px;
-  }
-
-  .midias {
-    justify-content: center;
-  }
-
-  .meio h1 {
-    font-size: 1.6rem;
-  }
-
-  .paragrafo {
-    font-size: 0.9rem;
-    padding: 20px;
-  }
-
-  .video video {
-    width: 100%;
-    height: auto;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    gap: 20px;
-  }
-}
-
-/* Telas até 480px (celulares pequenos) */
-@media (max-width: 480px) {
-  .logo img {
-    width: 120px;
-  }
-
-  .menu nav a {
-    font-size: 16px;
-  }
-
-  .meio h1 {
-    font-size: 1.4rem;
-  }
-
-  .paragrafo {
-    font-size: 0.8rem;
-  }
-
-  .midias .social {
-    width: 28px;
-    height: 28px;
-    font-size: 14px;
-  }
-
-  footer {
-    font-size: 0.75rem;
-    padding: 20px 0;
-  }
+    padding-bottom: 40px;
 }

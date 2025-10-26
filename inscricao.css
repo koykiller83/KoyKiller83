@@ -1,25 +1,20 @@
+/* Fonte usada no site */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
 
+/* Configurações da página */
 * 
 {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
-html 
+/* Fundo, cor e altura total */
+html, body 
 {
-    height: 100%;
-    background-color: #000;
-}
-
-body
-{
-    height: 100%;
-    background-color: #000;
+  height: 100%;
+  background-color: #000;
 }
 
 main 
@@ -37,6 +32,7 @@ header
     flex-shrink: 0;
 }
 
+/* Container do cabeçalho */
 .container-header
 {
     max-width: 1200px;
@@ -61,43 +57,34 @@ header
     cursor: pointer;
 }
 
-/* Inicio do menu */
-.menu 
-{
-    flex-grow: 1;
-}
-
+/* Menu */
 .menu nav 
 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 40px; /* distância entre os links */
+    gap: 40px;
 }
 
+/* Links */
 .menu nav a 
 {
     color: azure;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 18px;
     letter-spacing: 1px;
     padding: 2px 0;
     transition: color 0.3s;
 }
 
+/* Mudar cor dos links */
 .menu nav a:hover 
 {
     color: #d4a043;
 }
-.conteudo
-{
-    background-size: cover;
-    background-position: center;
-}
 
-/* Apartir daqui, botões de redes sociais
-e redirecionamento para as mesmas */
+/* Botões das redes sociais */
 .midias 
 {
     display: flex;
@@ -105,6 +92,7 @@ e redirecionamento para as mesmas */
     gap: 15px;
 }
 
+/* Estilo dos ícones */
 .midias .social 
 {
     display: flex;
@@ -120,24 +108,56 @@ e redirecionamento para as mesmas */
     transition: transform 0.3s, background 0.3s;
 }
 
-/* Animações nos botões */
+/* Mudar cor dos botões das redes sociais */
 .midias .social:hover 
 {
     transform: scale(1.2);
     background-image: linear-gradient(45deg, #ff7100, #ffaa00);
 }
 
-body 
+/* Rodapé */
+footer 
 {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-image: url(./img/fundomenu.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+  background-color: #000;
+  color: azure;
+  width: 100%;
+  padding: 30px 0;
+  text-align: center;
+  letter-spacing: 1.5px;
 }
 
+/* Container do rodapé */
+.footer-container 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.footer-logo img 
+{
+  width: 120px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.footertexto 
+{
+  font-size: x-small;
+  padding: 10px 0;
+}
+
+/* Referente ao centro da página */
+body 
+{
+  background-image: url(./img/fundomenu.png);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Container principal */
 .container 
 {
     width: 100%;
@@ -150,6 +170,7 @@ body
     margin: 0 auto;
 }
 
+/* Formulário */
 .form 
 {
     width: 50%;
@@ -162,6 +183,7 @@ body
     margin: 0 auto;
 }
 
+/* Cabeçalho do formulário */
 .form-header 
 {
     margin-bottom: 2.5rem;
@@ -171,18 +193,22 @@ body
     text-align: center;
     gap: 1.2rem;
 }
+
+/* Título formulário */
 .form-header h1
 {
     font-weight: bold;
 }
 
-.login-button 
+/* Botão entrar */
+.entrar-button 
 {
     display: flex;
     align-items: center;
 }
 
-.login-button button 
+/* Estilo botão entrar */
+.entrar-button button 
 {
     border: none;
     background-color: #d4a043;
@@ -192,18 +218,21 @@ body
     cursor: pointer;
 }
 
-.login-button button:hover 
+/* Efeito botão entrar */
+.entrar-button button:hover 
 {
     background-color: #f1c04b;
 }
 
-.login-button button a 
+/* Link botão entrar */
+.entrar-button button a 
 {
     text-decoration: none;
     font-weight: 500;
     color: #fff;
 }
 
+/* Traço Inscreva-se */
 .form-header h1::after 
 {
     content: '';
@@ -211,10 +240,11 @@ body
     width: 11.5rem;
     height: 0.3rem;
     background-color: #d4a043;
-    margin: 10px auto 0;
+    margin: 2px auto 0;
     border-radius: 10px
 }
 
+/* Dados do formulário */
 .input-group 
 {
     display: flex;
@@ -240,29 +270,28 @@ body
     font-size: 0.95rem;
 }
 
+/* Efeito no campo de digitação */
 .input-box input:hover 
 {
     background-color: #eeeeee75;
 }
 
-.input-box input:focus-visible 
-{
-    outline: 1px solid #d4a043;
-}
-
-.input-box label, .gender-title h6 
+/* Legenda dos campos */
+.input-box label, .genero-title h6 
 {
     font-size: 0.95rem;
     font-weight: 600;
     color: #000000c0;
 }
 
+/* Mensagem ao usuário dentro da box */
 .input-box input::placeholder 
 {
     color: #000000be;
 }
 
-.gender-group 
+/* Estilização dos seletores de gênero*/
+.genero-group 
 {
     display: flex;
     justify-content: space-between;
@@ -270,25 +299,26 @@ body
     padding: 0 .5rem;
 }
 
-.gender-input 
+.genero-input 
 {
     display: flex;
     align-items: center;
 }
 
-.gender-input input 
+.genero-input input 
 {
     margin-right: 0.35rem;
 }
 
-.gender-input label 
+.genero-input label 
 {
     font-size: 0.95rem;
-    font-weight: 300;
+    font-weight: 500;
     color: #000000c0;
 }
 
-.continue-button button 
+/* Estilo botão Continuar */
+.continuar-button button 
 {
     width: 100%;
     margin-top: 2.5rem;
@@ -299,171 +329,15 @@ body
     cursor: pointer;
 }
 
-.continue-button button:hover 
+.continuar-button button:hover 
 {
     background-color: #ffaa00;
 }
 
-.continue-button button a 
+.continuar-button button a 
 {
     text-decoration: none;
     font-size: 0.93rem;
     font-weight: 500;
     color: #fff;
-}
-
-.footer-container 
-{
-    display: flex;
-    flex-direction: row;         /* lado a lado */
-    align-items: center;
-    justify-content: center;
-    gap: 80px;
-    flex-wrap: wrap;
-}
-
-footer 
-{
-    background-color: #000;
-    color: azure;
-    width: 100%;
-    padding: 30px 0;
-    text-align: center;
-    letter-spacing: 1.5px;
-    position: relative;
-    left: 0;
-}
-
-.footer-logo img 
-{
-    width: 120px;                /* tamanho do logo */
-    height: auto;
-    margin-bottom: 10px;
-    filter: brightness(1.2);
-    transition: transform 0.3s ease;
-}
-
-.footertexto
-{
-    font-size: x-small;
-    padding: 10px 0;
-}
-
-
-
-
-
-
-
-/* =============================== */
-/*        RESPONSIVIDADE           */
-/* =============================== */
-
-/* Telas até 1024px (tablets e notebooks pequenos) */
-@media (max-width: 1024px) {
-  .menu nav a {
-    font-size: 20px;
-    gap: 25px;
-  }
-
-  .container {
-    width: 80%;
-  }
-
-  .form {
-    width: 70%;
-    padding: 2rem;
-  }
-}
-
-/* Telas até 768px (tablets em pé e celulares grandes) */
-@media (max-width: 768px) {
-  .container-header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 15px;
-  }
-
-  .menu nav {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .menu nav a {
-    font-size: 18px;
-  }
-
-  .midias {
-    justify-content: center;
-  }
-
-  .container {
-    width: 90%;
-    margin: 1rem auto;
-  }
-
-  .form {
-    width: 100%;
-    padding: 1.5rem;
-  }
-
-  .input-group {
-    flex-direction: column;
-  }
-
-  .gender-group {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 5px;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    gap: 20px;
-  }
-}
-
-/* Telas até 480px (celulares pequenos) */
-@media (max-width: 480px) {
-  .logo img {
-    width: 120px;
-  }
-
-  .menu nav a {
-    font-size: 16px;
-  }
-
-  .form-header {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .form-header h1 {
-    font-size: 1.5rem;
-  }
-
-  .form {
-    padding: 1rem;
-  }
-
-  .input-box input {
-    font-size: 0.8rem;
-    padding: 0.7rem;
-  }
-
-  .continue-button button {
-    font-size: 0.9rem;
-  }
-
-  .midias .social {
-    width: 28px;
-    height: 28px;
-    font-size: 14px;
-  }
-
-  footer {
-    font-size: 0.75rem;
-    padding: 20px 0;
-  }
 }
