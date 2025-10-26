@@ -1,0 +1,339 @@
+/* Fonte utilizada */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+/* Configurações da página */
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Altura e largura da página */
+html, body 
+{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* Body com layout flex */
+body 
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+.cabecalho 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Container do cabeçalho */
+.conteudo-cabecalho 
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo img 
+{
+    width: 180px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Menu */
+.menu 
+{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Links */
+.menu a 
+{
+    text-decoration: none;
+    color: #2a0770;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* Cor dos links */
+.menu a:hover 
+{
+    color: rgb(36, 119, 96);
+}
+
+/* Principal (Main) */
+.conteudo
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(36, 119, 96);
+    padding: 120px 20px 80px; /* compensa o cabeçalho fixo */
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Título principal (H1) */
+.titulo-principal 
+{
+    font-size: 32px;
+    text-align: center;
+    color: azure;
+    padding: 30px;
+}
+
+/* Parágrafo principal */
+.paragrafo-principal 
+{
+    color: azure;
+    font-size: 20px;
+    max-width: 800px;
+    line-height: 1.6;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* Container da página de contato */
+.contato-container 
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    max-width: 1100px;
+    width: 100%;
+    margin-top: 40px;
+    flex-wrap: nowrap;
+}
+
+/* Formulário */
+.formulario 
+{
+    margin-top: -30px;
+    padding: 25px;
+    flex: 1;
+    min-width: 350px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: azure;
+}
+
+/* Nome dos campos */
+.campo label 
+{
+    font-size: 15px;
+    margin-bottom: 5px;
+    text-align: left;
+    display: block;
+}
+
+/* Campo de inserção dos dados do usuário */
+.campo input
+{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Campo para mensagem */
+.campo textarea 
+{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Campo do tipo data */
+.campo input[type="date"] /* seletor de datas */
+{
+    color: #555; /* Cor do texto */
+}
+
+/* Botão de envio */
+.botao-enviar 
+{
+    background-color: azure;
+    color: rgb(36, 119, 96);
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Efeito no botão */
+.botao-enviar:hover 
+{
+    background-color: rgb(240, 240, 240);
+}
+
+/* Opções (input radio) */
+.opcoes 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+/* Grupo de radio com o texto */
+.radio 
+{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    color: azure;
+}
+
+/* Estilo labels das opções */
+.opcoes label 
+{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    color: azure;
+}
+
+/* Botões estilo radio */
+.radio input[type="radio"] 
+{
+    width: 15px;
+    height: 15px;
+}
+
+/* Informações de contato */
+.contato 
+{
+    flex: 1;
+    color: azure;
+    max-width: 450px;
+    text-align: left;
+}
+
+/* Titulo */
+.contato h2 
+{
+    margin-top: 25px;
+    margin-bottom: 35px;
+    font-size: 26px;
+}
+
+/* Retirar marcadores da lista */
+.contato ul 
+{
+    list-style: none;
+    padding: 0;
+}
+
+/* Itens da lista de contato */
+.contato li 
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Ícones importados da Font Awesome */
+.contato i 
+{
+    color: azure;
+    font-size: 20px;
+}
+
+/* Rodapé */
+.rodape 
+{
+    position: relative;
+    width: 100%;
+    background-color: azure;
+    text-align: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+/* Itens dentro do rodapé */
+.conteudo-rodape 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #2a0770;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px 5px;
+    line-height: 1.3;
+    font-size: 18px;
+    flex-wrap: nowrap;
+}
+
+/* Logo no rodapé */
+.logo-rodape img 
+{
+    width: 130px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Informações do rodapé */
+.texto 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-weight: 400;
+    font-size: 16px;
+    align-items: center;
+}
+
+/* Ícones de redes sociais */
+.sociais 
+{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    font-size: 24px;
+}
+
+/* Efeito dos ícones */
+.sociais i:hover 
+{
+    color: rgb(36, 119, 96);
+}
