@@ -6,15 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     <!-- CSS -->
+     <link rel="stylesheet" href="./global.css">
     <link rel="stylesheet" href="./index.css">
 
     <!-- Página fonte dos ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
-    
+
     <!-- Titulo da página -->
     <title>Odonto Nunes - Clínica Odontológica</title>
 </head>
+
 <body>
+
+    <div id="msg"></div>
+    
     <!-- Cabeçalho -->
     <header class="cabecalho">
         <div class="conteudo-cabecalho">
@@ -32,8 +37,17 @@
                 <a href="./blog.html">Blog</a>
                 <a href="./contato.html">Contato</a>
             </nav>
+            <div class="sociais-header">
+                <a href="https://facebook.com" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
         </div>
     </header>
+
     <!-- Principal -->
     <main class="conteudo">
         <!-- Boas vindas -->
@@ -47,8 +61,13 @@
         </section>
         <!-- Imagens -->
         <section class="imagens">
-            <img src="./img/atendimento.jpg" alt="Imagem 1">
-            <img src="./img/estrutura.jpg" alt="Imagem 2">
+            <img id="img1" src="./img/atendimento.jpg" alt="Imagem 1"
+                onmouseover="troca_img1()"
+                onmouseout="this.src='./img/atendimento.jpg'">
+
+            <img id="img2" src="./img/estrutura.jpg" alt="Imagem 2"
+                onmouseover="troca_img2()"
+                onmouseout="this.src='./img/estrutura.jpg'">
         </section>
     </main>
     <!-- Rodapé -->
@@ -74,5 +93,9 @@
             </div>
         </div>
     </footer>
+
+<!-- Javascript -->
+<script src="./index.js" defer></script>
+<script src="./global.js" defer></script>
 </body>
 </html>

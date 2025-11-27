@@ -1,85 +1,3 @@
-/* Fonte utilizada */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
-
-/* Configurações da página */
-* 
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-}
-
-/* Altura e largura da página */
-html, body 
-{
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden; /* Impede rolagem lateral */
-}
-
-/* Body com layout flex */
-body 
-{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-/* Cabeçalho */
-.cabecalho 
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    border-bottom: 1px solid #ddd;
-}
-
-/* Container do cabeçalho */
-.conteudo-cabecalho 
-{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-}
-
-/* Logo */
-.logo img 
-{
-    width: 180px;
-    height: auto;
-    cursor: pointer;
-}
-
-/* Menu */
-.menu 
-{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
-/* Links */
-.menu a 
-{
-    text-decoration: none;
-    color: #2a0770;
-    font-weight: 400;
-    font-size: 18px;
-}
-
-/* Cor dos links */
-.menu a:hover 
-{
-    color: rgb(36, 119, 96);
-}
-
 /* Principal (Main) */
 .conteudo 
 {
@@ -89,7 +7,7 @@ body
     align-items: center;
     justify-content: flex-start;
     background-color: rgb(36, 119, 96);
-    padding: 120px 20px 80px; /* compensa o cabeçalho fixo */
+    padding: 120px 20px 80px;
     box-sizing: border-box;
     text-align: center;
 }
@@ -103,10 +21,13 @@ body
 
 .titulo-principal 
 {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 700;
     font-size: 32px;
     text-align: center;
     color: azure;
     padding: 30px;
+    letter-spacing: 1.2px;
 }
 
 .paragrafo-principal 
@@ -116,7 +37,7 @@ body
     max-width: 800px;
     line-height: 1.6;
     padding: 10px;
-    text-align: center;
+    text-align: justify;
 }
 
 /* Bloco Missão e Valores */
@@ -142,7 +63,7 @@ body
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: center;
+    text-align: justify;
 }
 
 /* Bloco Valores */
@@ -156,15 +77,18 @@ body
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: center;
+    text-align: justify;
 }
 
 /* Títulos dos blocos */
 .missao h2, .valores h2 
 {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 700;
     font-size: 28px;
     color: azure;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 /* Parágrafos dos blocos */
@@ -173,6 +97,7 @@ body
     font-size: 18px;
     line-height: 1.5;
     color: azure;
+    text-align: center;
 }
 
 /* Efeito sobre o bloco Missão */
@@ -191,202 +116,62 @@ body
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/*  Rodapé  */
-.rodape 
-{
-    position: relative;
-    width: 100%;
-    background-color: azure;
-    text-align: center;
-    padding: 10px 0;
-    box-sizing: border-box;
-}
+/* ... código existente ... */
 
-/* Itens dentro do rodapé */
-.conteudo-rodape 
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #2a0770;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 10px 5px;
-    line-height: 1.3;
-    font-size: 18px;
-    flex-wrap: nowrap;
-}
-
-/* Logo no rodapé */
-.logo-rodape img 
-{
-    width: 130px;
-    height: auto;
-    cursor: pointer;
-}
-
-/* Informações do rodapé */
-.texto 
-{
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    font-weight: 400;
-    font-size: 16px;
-    align-items: center;
-}
-
-/* Ícones de redes sociais */
-.sociais 
-{
-    display: flex;
-    align-items: center;
-    gap: 22px;
-    font-size: 24px;
-}
-
-/* Efeito dos ícones */
-.sociais i:hover 
-{
-    color: rgb(36, 119, 96);
-}
-
-@media (max-width: 1024px) {
-    /* Tablets e telas menores */
-    .conteudo-cabecalho {
-        padding: 15px 20px;
-    }
-    
-    .menu {
-        gap: 15px;
-    }
-    
-    .menu a {
-        font-size: 16px;
-    }
-    
+/* ========== RESPONSIVIDADE ========== */
+@media (max-width: 768px) {
     .conteudo {
-        padding: 110px 15px 60px;
+        padding: 100px 15px 60px;
     }
     
     .titulo-principal {
         font-size: 28px;
-        padding: 20px;
+        padding: 20px 15px;
     }
     
     .paragrafo-principal {
         font-size: 18px;
-        padding: 8px;
-    }
-}
-
-@media (max-width: 768px) {
-    /* Tablets pequenos e celulares grandes */
-    .conteudo-cabecalho {
-        flex-direction: column;
-        gap: 15px;
+        text-align: center;
         padding: 10px 15px;
     }
     
-    .logo img {
-        width: 150px;
-    }
-    
-    .menu {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-    }
-    
-    .menu a {
-        font-size: 15px;
-        padding: 5px 10px;
-    }
-    
-    .conteudo {
-        padding: 140px 10px 50px;
-    }
-    
-    .titulo-principal {
-        font-size: 24px;
-        padding: 15px;
-    }
-    
-    .paragrafo-principal {
-        font-size: 16px;
-        line-height: 1.4;
-    }
-    
-    /* Rodapé responsivo */
-    .conteudo-rodape {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-    }
-    
-    .logo-rodape img {
-        width: 110px;
-    }
-    
-    .sociais {
-        gap: 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    /* Celulares */
-    .conteudo-cabecalho {
-        padding: 8px 10px;
-    }
-    
-    .logo img {
-        width: 130px;
-    }
-    
-    .menu {
-        gap: 8px;
-    }
-    
-    .menu a {
-        font-size: 14px;
-        padding: 4px 8px;
-    }
-    
-    .conteudo {
-        padding: 130px 8px 40px;
-    }
-    
-    .titulo-principal {
-        font-size: 22px;
-        padding: 10px;
-    }
-    
-    .paragrafo-principal {
-        font-size: 15px;
-        line-height: 1.3;
-    }
-}
-
-@media (max-width: 768px) {
     .missao-valores {
         flex-direction: column;
-        align-items: center;
         gap: 20px;
+        padding: 0 15px;
     }
     
-    .missao,
-    .valores {
+    .missao, .valores {
         max-width: 100%;
         min-height: auto;
     }
     
-    .missao h2,
-    .valores h2 {
+    .missao h2, .valores h2 {
         font-size: 24px;
     }
     
-    .missao p,
-    .valores p {
+    .missao p, .valores p {
         font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo-principal {
+        font-size: 24px;
+        padding: 15px 10px;
+    }
+    
+    .paragrafo-principal {
+        font-size: 16px;
+        padding: 8px 10px;
+    }
+    
+    .missao, .valores {
+        padding: 15px;
+    }
+    
+    .missao h2, .valores h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
     }
 }
